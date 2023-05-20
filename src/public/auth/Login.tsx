@@ -19,7 +19,7 @@ const Login = () => {
                                 E-mail:
                             </label>
                             <input 
-                                className="border-solid border-2 border-stone-200 w-1/2 rounded-md py-1 px-2"
+                                className="border-solid border-2 border-stone-200 w-1/2 rounded-md py-1 px-2 text-xs"
                                 type="email">
                             </input>
                         </div>
@@ -28,7 +28,7 @@ const Login = () => {
                                 Password:
                             </label>
                             <input 
-                                className="border-solid border-2 border-stone-200 w-1/2 rounded-md py-1 px-2"
+                                className="border-solid border-2 border-stone-200 w-1/2 rounded-md py-1 px-2 text-xs"
                                 type="password">
                             </input>
                         </div>
