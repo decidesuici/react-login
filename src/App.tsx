@@ -1,10 +1,10 @@
 import './App.css'
-import Login from './public/auth/Login.tsx'
+import AppRouter from './app.router'
 
 function App() {
   return (
     <>
-      <Login></Login>
+      <AppRouter />
     </>
   )
 }
