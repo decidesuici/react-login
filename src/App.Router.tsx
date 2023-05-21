@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
 // Import elements
 import Login from './public/auth/Login'
-import Signin from './public/auth/Signup'
+import Signup from './public/auth/Signup'
 import Recover from './public/auth/Recover'
 import Home from './public/Home'
 import NotFound from './public/NotFound'
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
                 Component: Login
             },
             {
-                path: 'signin',
-                Component: Signin
+                path: 'signup',
+                Component: Signup
             },
             {
                 path: 'recover-password',

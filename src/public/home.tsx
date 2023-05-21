@@ -4,7 +4,9 @@ function Home(){
     return(
         <>
             <Navbar></Navbar>
-            <p>Home is working!</p>
+            <div className="w-3/4 mx-auto bg-white h-screen">
+
+            </div>
         </>
     )
 }

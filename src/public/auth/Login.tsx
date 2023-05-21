@@ -1,6 +1,8 @@
-const Login = () => {
+import { Link } from 'react-router-dom'
+
+function Login(){
     return (
-        <>
+        <>  
             <div className="flex w-3/4 mx-auto shadow-md mt-20 rounded-md">
 
                 {/* Formulario */}
@@ -35,12 +37,24 @@ const Login = () => {
                         <div className="flex justify-between w-1/2 mx-auto">
                             <div>
                                 <input type="checkbox"></input>
-                                <label className="text-sm ml-2">Remember my password</label>
+                                <label className="text-sm ml-2">
+                                    Remember my password
+                                </label>
                             </div>
-                            <a href="" className="text-sm underline">Forgot my password</a>
+                            <Link to="/auth/recover-password" className="text-sm underline">
+                                Forgot my password
+                            </Link>
+                        </div>
+                        <div className="flex justify-between w-1/2 mx-auto mt-3">
+                            <Link to="/home" className="text-sm underline">
+                                Go to home
+                            </Link>
+                            <Link to="/auth/signup" className="text-sm underline">
+                                Create an account
+                            </Link>
                         </div>
                     </div>
-                    <div className="mt-8 mb-20">
+                    <div className="mt-4 mb-20">
                         <button className="bg-violet-500 text-white px-10 py-1 rounded-lg border-solid border-2 border-violet-500 transition-all hover:bg-white hover:text-violet-500">
                             Log In
                         </button>
@@ -48,8 +62,8 @@ const Login = () => {
                 </div>
 
                 {/* Relleno */}
-                <div className="flex bg-gray-200 w-1/3 justify-center items-center rounded-tr-md rounded-br-md">
-                    <div className="w-40 h-40 bg-gradient-to-tr from-violet-500 to-pink-500 rounded-full animate-bounce"></div>
+                <div className="flex bg-gradient-to-tr from-violet-500 to-pink-500 w-1/3 justify-center items-center rounded-tr-md rounded-br-md">
+                    {/* <div className="w-40 h-40 bg-gradient-to-tr from-violet-500 to-pink-500 rounded-full animate-bounce"></div> */}
                 </div>
             </div>
         </>
